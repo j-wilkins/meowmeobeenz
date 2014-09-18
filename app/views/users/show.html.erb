@@ -1,19 +1,38 @@
 <p id="notice"><%= notice %></p>
 
-<p>
-  <strong>Name:</strong>
-  <%= @user.name %>
-</p>
+</br>
+</br>
+</br>
 
-<p>
-  <strong>Rating:</strong>
-  <%= @user.rating %>
-</p>
+<div class='box'>
+
+  <h1>
+    <%= @user.name %>
+  </h1>
+
+  </br>
+  </br>
+
+  <p>
+    <h2>
+      <strong>Rating:</strong>
+      <%= @user.rating %>
+    </h2>
+  </p>
+
+</div>
+
+</br>
+</br>
 
 <p>
   <strong>Email:</strong>
   <%= @user.email %>
 </p>
+
+
+</br>
+</br>
 
 <%= link_to 'Edit', edit_user_path(@user) %> |
 <%= link_to 'Back', users_path %>

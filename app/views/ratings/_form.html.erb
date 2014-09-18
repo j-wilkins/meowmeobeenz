@@ -11,15 +11,42 @@
     </div>
   <% end %>
 
+
+  </br>
+  </br>
+  </br>
+
+  <div class="box">
   <div class="field">
-    <%= @rating.user.name %><br>
+    <h1> 
+      <%= @rating.user.name %><br>
+    </h1>
     <%= f.hidden_field :user_id, value: @rating.user.id %>
   </div>
+
+  </br>
+  </br>
+  </br>
+
   <div class="field">
-    <%= f.label :value %><br>
-    <%= f.number_field :value %>
+    <%= f.radio_button :value, 1 %>
+    <label for='rating_value_1'></label>
+    <%= f.radio_button :value, 2 %>
+    <label for='rating_value_2'></label>
+    <%= f.radio_button :value, 3 %>
+    <label for='rating_value_3'></label>
+    <%= f.radio_button :value, 4 %>
+    <label for='rating_value_4'></label>
+    <%= f.radio_button :value, 5 %>
+    <label for='rating_value_5'></label>
   </div>
+
+  </br>
+  </br>
+  </br>
+
   <div class="actions">
     <%= f.submit %>
+  </div>
   </div>
 <% end %>

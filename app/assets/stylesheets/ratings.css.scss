@@ -1,3 +1,20 @@
 // Place all the styles related to the ratings controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+input[type="radio"] {
+    display:none;
+}
+
+input[type="radio"] + label {
+    display:inline-block;
+    width:85px;
+    height:95px;
+    margin:-10px 0px 0 0;
+    vertical-align:middle;
+    background:url(ranking_cats.png) left top no-repeat;
+    cursor:pointer;
+}
+input[type="radio"]:checked + label {
+    background:url(ranking_cats.png) -170px top no-repeat;
+}
