@@ -1,15 +1,38 @@
 body {
-  background-color: #fff;
-  color: #333;
+  background-image: url(red_starburst.jpg);
+  background-size: 100% ;
+  background-repeat: no-repeat;
+
+  color: white;
+
   font-family: verdana, arial, helvetica, sans-serif;
-  font-size: 13px;
+  font-size: 25px;
   line-height: 18px;
+
+  text-align: center;
+}
+
+div {
+  margin: 10px;
 }
 
 p, ol, ul, td {
   font-family: verdana, arial, helvetica, sans-serif;
-  font-size: 13px;
+  font-size: 25px;
   line-height: 18px;
+}
+
+th, td {
+  font-size: 25px;
+}
+
+table {
+  background:rgba(255,255,255,0.4);  
+  width: 500px;
+  margin-top: 50px;
+  margin-left:auto; 
+  margin-right:auto;
+  padding: 30px;
 }
 
 pre {
@@ -21,11 +44,11 @@ pre {
 a {
   color: #000;
   &:visited {
-    color: #666;
+    color: black;
   }
   &:hover {
     color: #fff;
-    background-color: #000;
+    background:rgba(255,255,255,0.4);  
   }
 }
 
@@ -66,4 +89,20 @@ div {
     font-size: 12px;
     list-style: square;
   }
+}
+
+.nav a {
+  color: white;
+}
+
+a {
+  color: white;
+}
+
+.box {
+  width: 500px;
+  background:rgba(255,255,255,0.4);  
+  padding: 50px 20px;
+  margin-right: auto;
+  margin-left: auto;
 }
